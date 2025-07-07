@@ -1,0 +1,8 @@
+arxiv~=2.2.0
+feedparser~=6.0.11
+requests~=2.32.4
+python-dotenv~=1.1.1
+docling~=2.39.0
+loguru~=0.7.3
+qdrant-client~=1.14.3
+sentence-transformers~=5.0.0

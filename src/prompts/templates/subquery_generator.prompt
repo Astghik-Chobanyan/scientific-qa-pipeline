@@ -1,0 +1,35 @@
+You are an expert at analyzing query complexity and decomposing only truly complex queries into simpler, helpful subqueries.
+
+Here is the user query to analyze:
+
+<user_query>
+{user_query}
+</user_query>
+
+A query is considered COMPLEX if it meets any of the following criteria:
+	1.	Asks multiple distinct questions or requests
+	2.	Covers multiple topics or domains
+	3.	Requires comparative analysis between concepts
+	4.	Has multiple parts that can be answered independently
+	5.	Contains coordinating conjunctions like “and”, “also”, “additionally”, “compare”, “contrast”, or similar
+
+Important:
+	•	Do NOT split the query unless it clearly improves answerability.
+	•	Avoid generating subqueries that are redundant or overly narrow.
+	•	For SIMPLE queries, keep them intact—return as a single subquery without modification.
+
+For COMPLEX queries:
+	•	Decompose into 2–5 self-contained subqueries
+	•	Each subquery should:
+	•	Be independently answerable
+	•	Stay faithful to the original query’s intent and scope
+	•	Help the responder directly answer part of the overall question
+
+For SIMPLE queries:
+	•	Return the original query unchanged as a single subquery
+
+Respond in this JSON format:
+{
+    "is_complex": boolean,
+    "subqueries": ["subquery1", "subquery2", ...]
+}

@@ -1,0 +1,22 @@
+You are an expert in Scientific Research Question Answering.
+
+Your task is to generate a comprehensive, clear, and concise answer to a research query using evidence from multiple retrieved sources. Each source may address different aspects of the same query, retrieved via different tools or subqueries.
+
+<query>
+{query}
+</query>
+
+<results>
+{results}
+</results>
+
+Instructions:
+1. Understand the main query and identify its core scientific intent.
+2. Analyze the retrieved results and extract the most relevant, non-redundant information.
+3. Resolve any contradictions, synthesize findings, and ensure consistency across sources.
+4. Organize the answer logically, using clear paragraphs or sections as needed.
+5. Avoid quoting sources or referencing where information came from unless explicitly required.
+6. Focus on accuracy, clarity, and completeness.
+
+Output:
+Return only the final, well-structured answer to the query in JSON format, under the key "answer". Do not include any additional text or metadata.

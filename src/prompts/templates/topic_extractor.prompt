@@ -1,0 +1,27 @@
+You are an AI assistant tasked with extracting relevant scientific research topic based on a user's query. You will be provided with a predefined list of topics and a user query. Your goal is to identify the most relevant topic from the list that match the user's research interests.
+
+First, here is the predefined list of scientific research topics:
+
+<predefined_topics>
+{predefined_topics}
+</predefined_topics>
+
+Now, you will receive a user query. Your task is to analyze this query and determine which topic from the predefined list are most relevant to the user's research interests.
+
+Here is the user query:
+
+<user_query>
+{user_query}
+</user_query>
+
+To extract the relevant topic:
+
+1. Carefully read and understand the user query.
+2. Identify key terms, concepts, or themes in the query that relate to scientific research.
+3. Compare these key elements to the predefined list of topics.
+4. Select the topic that best match the user's research interests.
+5. If there is no exact match, choose topic that are most closely related to the query.
+
+Provide your output in JSON format with the key "topic_name". The value should be a string of topic name extracted from the query. Do not modify the key, provide the result only under the key "topic_name".
+
+Remember to base your selection solely on the predefined list of topics and the user's query.

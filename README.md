@@ -9,7 +9,7 @@ A modular pipeline designed to help users ask natural language questions and rec
 This project enables:
 - **Scraping scientific papers** from arXiv using a keyword/topic.
 - **Storing metadata**: title, summary, authors, publication date, PDF URL, and file path.
-- **Preprocessing papers** into Markdown via [**Docling**](https://github.com/docling/docling) for downstream NLP.
+- **Preprocessing papers** into Markdown via [**Docling**](https://github.com/docling-project/docling) for downstream NLP.
 - **Answering user queries** interactively using a LangGraph-powered multi-tool chat engine.
 
 ---
@@ -43,7 +43,7 @@ This project enables:
 
 ## 💬 3. Conversational QA with LangGraph
 
-[LangGraph](https://python.langgraph.org) is used to power the entire **stateful QA workflow**.
+[LangGraph](https://langchain-ai.github.io/langgraph/) is used to power the entire **stateful QA workflow**.
 
 ### 📌 Why LangGraph?
 
